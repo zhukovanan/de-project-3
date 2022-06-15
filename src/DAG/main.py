@@ -1,7 +1,7 @@
 from airflow import DAG
 from airflow.operators.python_operator import PythonOperator, BranchPythonOperator
 from airflow.providers.postgres.operators.postgres import PostgresOperator
-from project.plugins.plugin import generate_report, get_report, get_increment, upload_data_to_staging, postgres_conn_id
+from plugins.plugin import generate_report, get_report, get_increment, upload_data_to_staging, postgres_conn_id
 from datetime import datetime, timedelta
 
 
